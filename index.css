@@ -71,13 +71,13 @@ h3 strong {
 /* Flexbox Layout for Car of the Week */
 .car-of-the-week {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .car-of-the-week img {
@@ -121,6 +121,10 @@ hr {
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
+    .car-of-the-week {
+        flex-direction: column;
+    }
+
     header h1 {
         font-size: 2.5rem;
     }
@@ -138,10 +142,6 @@ hr {
 
     section h2 {
         font-size: 1.8rem;
-    }
-
-    .car-of-the-week {
-        flex-direction: column;
     }
 
     .car-description {
